@@ -11,18 +11,24 @@ const createTable = () => {
 }
 createTable()
 
-let arrayOfNumberDrew= []
-const buttonToDraw = document.getElementById("drawANumber")
-buttonToDraw.addEventListener("click", () => {
-    let numberDrew = Math.floor((Math.random() * 76) + 1) // Generate a random number
+let arrayOfNumberDrew = []
 
+const drawANumber = () => {
+    let numberDrew = Math.floor((Math.random() * 76) + 1) // Generate a random number
+    if(arrayOfNumberDrew.includes(numberDrew)) {
+        drawANumber()
+    } else {
+        arrayOfNumberDrew.push(numberDrew)
     let allCells = document.querySelectorAll(".cell")
     allCells.forEach(cell => {
         if (Number(cell.innerText) === numberDrew) {
             cell.classList.add("drew")
         }    
     })
-})
+    }
+}
+const buttonToDraw = document.getElementById("drawANumber")
+buttonToDraw.addEventListener("click", drawANumber)
 
 // Ho generato un array di numeri da pescare
 // Devo pescare da questo array
