@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Tombola</title>
+    <title>Bingo</title>
   </head>
   <body>
     <h1>BINGO</h1>
-    <div id="tabellone"></div>
+    <div id="bingoTable"></div>
     <button id="drawANumber">Draw a Number</button>
+    <div id="selectCardsNumber">
+      <label for="cardsNumber">Number of Cards</label>
+      <input id="cardsNumber" type="number" max="5" min="1" />
+      <button id="cardsGenerator">Generate Cards</button>
+    </div>
+    <div id="cardsSpace"></div>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,23 +1,54 @@
+
 body {
     text-align: center;
-    background-color: #150833;
+    background: linear-gradient(180deg, rgba(21,8,51,1) 0%, rgba(26,112,116,1) 100%);
     color: cornflowerblue;
+    font-weight: bold;
 }
 
 .cell {
     text-align: center;
     display: inline-block;
-    width: 8%;
+    width: 5%;
     border: 1px solid cornflowerblue;
 }
-
 
 button {
     padding: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
     background-color: cornflowerblue;
     border-radius: 10px;
     font-weight: bold;
+}
+
+#selectCardsNumber {
+    margin-top: 10px;
+}
+label {
+    color:#150833;
+    font-size: 1.2em;
+}
+
+#cardsNumber {
+    color: cornflowerblue;
+    background-color: #150833;
+    margin-left: 5px;
+}
+
+#cardsSpace div {
+    width: 20%;
+    display: inline-block;
+}
+
+.cardsContainer {
+    background: linear-gradient(180deg, rgba(21,8,51,1) 0%, rgba(26,112,116,1) 100%);
+}
+.cardsCell {
+    text-align: center;
+    display: inline-block;
+    width: 5%;
+    border: 1px solid cornflowerblue;
 }
 
 .drew {
