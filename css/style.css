@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    background-color: #150833;
+    color: cornflowerblue;
+}
+
+.cell {
+    text-align: center;
+    display: inline-block;
+    width: 8%;
+    border: 1px solid cornflowerblue;
+}
+
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.drew {
+    background-color: cornflowerblue;
+    color: #150833;
+    border: 1px solid #150833;
+}
