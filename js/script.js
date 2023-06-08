@@ -26,7 +26,12 @@ const drawANumber = () => {
         }    
     })
     if (arrayOfNumberDrew.length === 76) {
-        alert("BINGO")
+        alert("BINGO!!")
+        const buttonDraw = document.getElementById("drawANumber")
+        buttonDraw.innerText = "Restart"
+        buttonDraw.addEventListener ("click", () => {
+            location.reload()
+        })
     }
     }
 }
